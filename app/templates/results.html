@@ -145,35 +145,7 @@
 		<div class="container">
 			<div class="row">
 				<h2>Chronic Kidney Disease</h2>
-				<h4>Fill all the fields with Valid Values</h4>
-				<form action="{{url_for('results')}}" method="post" name="Prediction">
-					{{ form.hidden_tag() }}
-					Enter your age:<br>{{form.age}}<br>
-					Enter your bp:<br> {{form.bp}}<br>
-					Fill your specific gravity level:<br>{{form.sg}}<br>
-					Fill your albumin level:<br>{{form.al}}<br>
-					Enter your sugar level:<br>{{form.sugar}}<br>
-					Enter your bg level:<br>{{form.blood_glucose}}<br>
-					Enter your urea level:<br>{{form.blood_urea}}<br>
-					Enter your serum level:<br>{{form.serum}}<br>
-                    Enter your sodium level:<br>{{form.sodium}}<br>
-					Enter your potassium level:<br>{{form.potassium}}<br>
-					Enter your hemoglobin:<br>{{form.hemoglobin}}<br>
-					Enter your packed cell volume:<br>{{form.pcv}}<br>
-					Enter your wbc count:<br>{{form.wbc}}<br>
-					Enter your rbc count:<br>{{form.rbc}}<br>
-					Do you have normal pus cells:<br>{{form.pus_cell}}<br>
-					Are your rbc count normal:<br>{{form.rbc}}<br>
-					Whether you have clumps?:<br>{{form.pcc}}<br>
-					Whether you had any Bacteria syndrome?:<br>{{form.bacteria}}<br>
-					Do you have hypertennsion?:<br>{{form.ht}}<br>
-					Do you have diabetes?:<br>{{form.diabetes}}<br>
-					Do you have cad?:<br>{{form.cad}}<br>
-					Do you have good appetite?:<br>{{form.appetite}}<br>
-					Do you have pedal edema?:<br>{{form.pedal}}<br>
-					Do you have/had anemia<br>{{form.anemia}}<br>
-					<input type="submit" value="Predict">
-				</form>
+				<h3>{{res}}</h3>
 			</div>
 		</div>
 	</section><!-- end of service section -->
